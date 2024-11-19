@@ -3,7 +3,7 @@
         <div class='flex space-around navbar-container tx-c f-30'>
             <a href='/'>DINGOPHAM</a>
             <div class='flex gap'>
-                <a href="#aboutMe">ABOUTME</a>
+                <a href="#aboutMe">{{currentTranslations.abtMe}}</a>
                 <a href="#thisWebsite">THISWEBSITE</a>
                 <a href="#desire">DESIRE</a>
                 <a href="#mySkills">MYSKILLS</a>
@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import TranslationList from '../function_components/function_container_folder/language_container/TranslationList';
+
 export default {
     name: 'Navbar',
     mounted() {
@@ -54,6 +56,7 @@ export default {
                 anchor.removeEventListener('click', handleAnchorClick); // Gỡ bỏ sự kiện khi component bị hủy
             });
         });
-    }
+    },
+    mixins: [TranslationList]
 };
 </script>
