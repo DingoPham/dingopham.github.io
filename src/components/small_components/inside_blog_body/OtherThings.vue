@@ -3,7 +3,7 @@
         <AnimatedContent>
             <div class='flex flex-column items-center gap'>
                 <p class='f-30 tx-center'>
-                    - If you are interested, please join me via social networks below -
+                    {{translations.otherThings}}
                 </p>
                 <div class='flex gap'>
                 <a href='https://github.com/DingoPham'>
@@ -20,7 +20,7 @@
                 </a>
                     </div>
                     <p class='f-30 tx-center'>
-                        - My artwork site -
+                        {{translations.artworkSite}}
                     </p>
                 <a href='/'>
                     <button class='bg-btn-color btn-color f-17'>
@@ -33,10 +33,14 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex/dist/vuex.common.js';
 import AnimatedContent from '../../function_components/AnimatedContent.vue';
 export default{
     components:{
         AnimatedContent
+    },
+    computed:{
+        ...mapGetters(['translations'])
     }
 }
 

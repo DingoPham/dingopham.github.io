@@ -86,5 +86,13 @@ body.no-scroll{
 }
 /*------------------Mobile--------------------*/
 @media (max-width: 768px) {
-    
+    .p-1 .tx-c .gap a {
+        position: unset;
+    }
+    .p-1 .tx-c .gap a:hover::before {
+        width: 0%;
+    }
+    .p-1 .tx-c .gap a::before {
+        text-decoration: none;
+    }
 }

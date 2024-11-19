@@ -141,10 +141,58 @@ body.dark{
     background-color: #282828;
     color: #fff;
 }
+body.no-scroll{
+    overflow: hidden;
+}
 .c-black{
     color: #000;
 }
 /*------------------Mobile--------------------*/
 @media (max-width: 768px) {
-
+    .m-3{
+        margin: 10px;
+    }
+    .p-6{
+        padding: 20px;
+    }
+    .p-2 {
+        padding: 50px 50px;
+    }
+    .flex-column-2{
+        flex-direction: column;
+    }
+    .f-30 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .navbar-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90%; /* Che 90% màn hình */
+        height: 100%;
+        background-color: #000000c4; /* Làm nền tối */
+        z-index: 1000;
+        flex-direction: column;
+        display: flex;
+        transform: translateX(120%); /* Ẩn menu mặc định */
+    }
+    .navbar-links a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 5px 0 5px 10px;
+    }
+    .navbar-links a:first-child{
+        margin-top: 60px;
+    }
+    .navbar-links.menu-open{
+        transform: translateX(0);
+    }
+    .items-center-2{
+        align-items: center;
+    }
+    .space-between-2{
+        justify-content: space-between;
+    }
 }

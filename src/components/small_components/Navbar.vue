@@ -1,23 +1,43 @@
 <template>
     <div class="navbar p-1 w-p-100" id="navBar">
-        <div class='flex space-around navbar-container tx-c f-30'>
+        <div class="flex space-around navbar-container items-center-2 space-between-2 tx-c f-30">
             <a href='/'>DINGOPHAM</a>
-            <div class='flex gap'>
-                <a href="#aboutMe">{{currentTranslations.abtMe}}</a>
-                <a href="#thisWebsite">THISWEBSITE</a>
-                <a href="#desire">DESIRE</a>
-                <a href="#mySkills">MYSKILLS</a>
-                <a href="#otherThings">OTHERTHINGS</a>
+
+            <NavbarIcon @toggle-menu="toggleMenu"/>
+            
+            <div class='flex gap navbar-links' :class="{ 'menu-open': isMenuOpen }">
+                <a href="#aboutMe" >{{translations.abtMe}}</a>
+                <a href="#thisWebsite" >{{translations.thisWeb}}</a>
+                <a href="#desire" >{{translations.des}}</a>
+                <a href="#mySkills" >{{translations.mySki}}</a>
+                <a href="#otherThings" >{{translations.otherThi}}</a>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import TranslationList from '../function_components/function_container_folder/language_container/TranslationList';
+import { mapGetters } from 'vuex/dist/vuex.common.js';
+import NavbarIcon from '../mobile_function/NavbarIcon.vue';
+
 
 export default {
-    name: 'Navbar',
+    components:{
+        NavbarIcon
+    },
+    data(){
+        return{
+            isMenuOpen: false
+        }
+    },
+    methods:{
+        toggleMenu(isOpen){
+            this.isMenuOpen = isOpen
+        },
+        closeMenu(){
+            this.isMenuOpen = false
+        }
+    },
     mounted() {
         const handleAnchorClick = (e) => {
             e.preventDefault();
@@ -57,6 +77,8 @@ export default {
             });
         });
     },
-    mixins: [TranslationList]
+    computed:{
+        ...mapGetters(['translations'])
+    }
 };
 </script>

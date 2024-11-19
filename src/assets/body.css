@@ -9,6 +9,7 @@
 section img{
     width: 400px;
     height: 350px;
+    border-radius: 2%;
 }
 .checked{
     color: orange;
@@ -70,5 +71,20 @@ button:active{
 }
 /*------------------Mobile--------------------*/
 @media (max-width: 768px) {
-    
+    section img {
+        width: 315px;
+        height: 40vh;
+    }
+    .bg-img {
+        width: 100%;
+        height: 43vh;
+        background-position-x: center;
+        background-image: url(https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718735895/skyBG_ajbji9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+    }
+    .m-as{
+        margin-bottom: 20px;
+    }
 }

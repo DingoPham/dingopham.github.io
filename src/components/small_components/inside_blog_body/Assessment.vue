@@ -1,7 +1,7 @@
 <template>
-        <div class='f-30 tx-center'>
+        <div class='f-30 tx-center m-as'>
             <ul class='flex flex-column'> 
-                My own assessment
+                {{translations.mySkills}}
                 <li class="flex gap flex-end">HTML/CSS:
                     <div class="flex">
                         <span class="fa fa-star checked"></span>
@@ -68,3 +68,13 @@
             </ul>
         </div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex/dist/vuex.common.js';
+
+export default{
+    computed:{
+        ...mapGetters(['translations'])
+    }
+}
+</script>

@@ -1,29 +1,35 @@
 <template>
     <div>
         <div class="cursor">
-        <button @click="toggleLanguage">
-            <component :is="currentButton" />
-        </button>
+            <button @click="toggleLanguage">
+                <VietnamButton v-if="language === 'en'" />
+                <EnglishButton v-else />
+            </button>
         </div>
     </div>
 </template>
   
 <script>
+import { mapGetters, mapMutations } from "vuex/dist/vuex.common.js";
 import EnglishButton from "./language_container/EnglishButton.vue";
-import VietnamButton from "./language_container/VietNamButton.vue";
-import TranslationList from "./language_container/TranslationList";
+import VietnamButton from "./language_container/VietnamButton.vue";
   
 export default {
-    name: "TranslationFunction",
     components: {
         VietnamButton,
         EnglishButton,
     },
-    mixins: [TranslationList],
     computed:{
-        currentButton(){
-            return this.language === "en" ? "VietnamButton" : "EnglishButton";
-        }
+        ...mapGetters(['currentLanguage']),
+        language(){
+            return this.currentLanguage;
+        },
     },
+    methods:{
+        ...mapMutations(['setLanguage']),
+        toggleLanguage(){
+            this.setLanguage(this.language === 'en' ? 'vi' : 'en');
+        }
+    }
 };
 </script>
