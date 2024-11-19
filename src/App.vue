@@ -27,3 +27,5 @@ export default {
 </style>
 <style src="@/assets/foot.css">
 </style>
+<style src="@/assets/function.css">
+</style>
