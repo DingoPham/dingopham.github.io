@@ -1,7 +1,7 @@
 <template>
     <section id='desire' class='m-b'>
         <AnimatedContent>
-            <div class='flex flex-reverse gap-41 flex-column-2'>
+            <div class='flex flex-reverse gap-41 flex-column-2 items-center-2'>
                 <p class='f-30 tx-center'>
                     {{translations.desire}}
                 </p>
