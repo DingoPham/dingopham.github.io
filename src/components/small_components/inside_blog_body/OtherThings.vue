@@ -22,7 +22,7 @@
                     <p class='f-30 tx-center'>
                         {{translations.artworkSite}}
                     </p>
-                <a href='/'>
+                <a href='https://artwork-site-3l77.onrender.com/#/'>
                     <button class='bg-btn-color btn-color f-17'>
                         Artwork Site
                     </button>
