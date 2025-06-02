@@ -5,7 +5,7 @@
                 <p class='f-30 tx-center'>
                     {{translations.aboutMe}}
                 </p>
-                <img src='https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718737294/catYes_vafisx.gif' alt=''/>
+                <img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHYzNjdhajYzdTFjZWVnYmdtZml1ZXB0emk3OHk2bDNrYXVzZzN0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14xfuigYwofmYo/giphy.gif' alt=''/>
             </div>
         </AnimatedContent>
     </section>

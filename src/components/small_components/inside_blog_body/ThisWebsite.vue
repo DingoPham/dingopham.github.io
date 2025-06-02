@@ -5,7 +5,7 @@
                 <p class='f-30 tx-center'>
                     {{translations.thisWebsite}}
                 </p>
-                <img src='https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718735928/catNo_hdsqiy.gif' alt=''/>
+                <img src='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDM5ZnUxa282YWhnYnhqbHVhMG83ajI4aGoxMmRyZGt1OTEybWQ1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qo6Jvmp6kZD2g/giphy.gif' alt=''/>
             </div>
         </AnimatedContent>
     </section>
