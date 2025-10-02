@@ -1,9 +1,16 @@
+<style scoped>
+    .gap-cus{
+        gap: 100px;
+        margin-top: 300px
+    }
+</style>
+
 <template>
-    <div class='flex flex-column p-6 m-3'>
+    <div class='flex flex-column p-3 m-3 gap-cus'>
         <AboutMe />
         <ThisWebsite />
         <Desire />
-        <MySkills />
+        <!-- <MySkills /> -->
         <OtherThings />
     </div>
 </template>

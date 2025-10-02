@@ -22,19 +22,13 @@
 .b-radius{
     border-radius: 40%;
 }
-.position-fixed{
+.function-box{
     position: fixed;
     z-index: 1000;
-}
-.fu-con{
-    top: 78%;
-    left: 95%;
-}
-.fu-con-box{
-    background-color: #80808062;
     border-radius: 10px;
-    width: 50px;
-    height: 155px;
+    background-color: #80808062;
+    bottom: 1%;
+    right: 1%;
 }
 .cursor button{
     border: none;
@@ -43,14 +37,15 @@
     border-radius: 50%;
     width: 50px;
     height: 45px;
+    
 }
 .cursor button:hover{
     background-color: #ffffff;
 }
 /*------------------Mobile--------------------*/
 @media (max-width: 768px) {
-    .fu-con {
-        top: 79%;
-        left: 82%;
+    .function-box {
+        bottom: 1%;
+        right: 1%;
     }
 }

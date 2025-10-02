@@ -1,7 +1,13 @@
+<style scoped>
+    .padding-20{
+        padding: 10px;
+    }
+</style>
+
 <template>
     <div>
-        <div class="position-fixed fu-con fu-con-box p-1">   
-            <div class="flex flex-column items-center gap-10">
+        <div class="function-box">   
+            <div class="flex flex-column items-center gap-10 padding-20">
                 <Function_GoToTop />
                 <Function_ThemeSwitcher />
                 <Function_Translator />

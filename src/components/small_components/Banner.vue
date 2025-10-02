@@ -1,3 +1,3 @@
 <template>
-    <div class='bg-img m-b'></div>
+    <div class='bg-img'></div>
 </template>
