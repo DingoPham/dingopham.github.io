@@ -5,6 +5,7 @@
     background-image: url(../assets/imgs/aurora-skyjpg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
 }
 section img{
     width: 400px;
